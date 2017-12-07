@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10 puglings</title>
+
+    <meta name="author" content="Amsul - http://amsul.ca">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tiltedpage-scroll.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.tiltedpage-scroll.min.js"></script>
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <link rel="stylesheet" href="css/nanogallery.min.css">
+    <script src="js/jquery.nanogallery.min.js"></script>
+
+    <link rel="stylesheet" href="css/default.date.css">
+    <link rel="stylesheet" href="css/default.time.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.countdown.css">
+    <script src="js/pie-chart.js"></script>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#demo-pie-1').pieChart({
+                barColor: '#68b828',
+                trackColor: '#eee',
+                lineCap: 'round',
+                lineWidth: 8,
+                onStep: function(from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-2').pieChart({
+                barColor: '#8465d4',
+                trackColor: '#eee',
+                lineCap: 'butt',
+                lineWidth: 8,
+                onStep: function(from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-3').pieChart({
+                barColor: '#457303',
+                trackColor: '#eee',
+                lineCap: 'square',
+                lineWidth: 8,
+                onStep: function(from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-4').pieChart({
+                barColor: '#8465d4',
+                trackColor: '#eee',
+                lineCap: 'round',
+                lineWidth: 8,
+                rotate: 90,
+                onStep: function(from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="scroll">
+        <h1 class="ttle">Tilted Scroll</h1>
+        <div class="main">
+            <section class="page1">
+                <div class="heading">
+                    <h3>Lorem ipsum dolor.</h3>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                </div>
+
+                <a href="#"><img src="img/demo1.jpg" alt="a"></a>
+            </section>
+            <section class="page2">
+                <div class="heading">
+                    <h3>Lorem ipsum dolor.</h3>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                </div>
+                <img src="img/demo2.jpg" alt="">
+            </section>
+
+            <section class="last-page">
+                <div class="heading">
+                    <h3>Lorem ipsum dolor.</h3>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                </div>
+                <img src="img/demo3.jpg" alt="">
+            </section>
+        </div>
+    </div>
+
+
+    <div class="animsition">
+        <h1 class="ttle">Animsition</h1>
+
+        <a href="https://www.facebook.com" class="animsition-link" data-animsition-out-class="rotate-out" data-animsition-out-duration="500" target="_blank"><img src="img/demo4.jpg" alt=""></a>
+    </div>
+
+
+    <h1 class="ttle">Vide</h1>
+
+
+
+
+
+    <div id="block" style="width: 100%; height: 500px;" data-vide-bg="video/ocean" data-vide-options="position: 0% 50%"></div>
+
+    <br><br>
+
+    <div id="block2" style="width: 100%; height: 500px;" data-vide-bg="mp4: video/ocean, webm: video/ocean, ogv: http://vodkabears.github.io/vide/video/ocean, poster: video/ocean" data-vide-options="position: 0% 50%">
+    </div>
+
+
+    <div id="nanoGallery2"></div>
+
+
+
+
+
+
+
+
+
+    <!--    datepicker-->
+
+
+    <section class="section">
+        <h1 class="ttle">PickDate</h1>
+
+        <form>
+            <fieldset>
+                <h3><label for="input_01">Pick a date. Go ahead...</label></h3>
+
+                <input type="text">
+                <input id="input_01" class="datepicker" name="date" type="text" autofocuss value="14 August, 2014" data-valuee="2014-08-08">
+                <input type="text">
+
+                <br><br><br><br><br>
+                <!-- <button type="button">Disable all dates</button>
+                <input class="button" type="submit" value="open"> -->
+            </fieldset>
+        </form>
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div id="container"></div>
+
+        <input type="text">
+
+    </section>
+
+    <!--
+    
+     <section class="section">
+
+        <form>
+            <fieldset>
+                <h3><label for="input_02">Pick a time. Go ahead...</label></h3>
+                <input
+                    id="input_from"
+                    class="datepicker"
+                    type="time"
+                    name="time"
+                    autofocuss>
+                     valuee="2:30 AM"
+                    data-value="0:00" 
+            </fieldset>
+        </form>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </section>
+
+   
+-->
+
+
+
+    <h1 class="ttle">TextTillate</h1>
+    <h1 class="tlt fun">Texttillate example with funny Text</h1>
+    <h1 class="ttle">countdown</h1>
+    <div id="countdown" class="countdownHolder">
+        <span class="countDays">
+        <span class="position">
+            <span class="digit static"></span>
+        </span>
+        <span class="position">
+            <span class="digit static"></span>
+        </span>
+        </span>
+
+        <span class="countDiv countDiv0"></span>
+
+        <span class="countHours">
+        <span class="position">
+            <span class="digit static"></span>
+        </span>
+        <span class="position">
+            <span class="digit static"></span>
+        </span>
+        </span>
+
+        <span class="countDiv countDiv1"></span>
+
+        <span class="countMinutes">
+        <span class="position">
+            <span class="digit static"></span>
+        </span>
+        <span class="position">
+            <span class="digit static"></span>
+        </span>
+        </span>
+
+        <span class="countDiv countDiv2"></span>
+
+        <span class="countSeconds">
+        <span class="position">
+            <span class="digit static"></span>
+        </span>
+        <span class="position">
+            <span class="digit static"></span>
+        </span>
+        </span>
+
+        <span class="countDiv countDiv3"></span>
+    </div>
+
+
+
+
+    <h1 class="ttle">Progress bar</h1>
+
+    <div class="container">
+
+        <div id="demo-pie-1" class="pie-title-center" data-percent="25"> <span class="pie-value"></span> </div>
+        <div id="demo-pie-2" class="pie-title-center" data-percent="70"> <span class="pie-value"></span> </div><br>
+        <br>
+
+        <div id="demo-pie-3" class="pie-title-center" data-percent="-35"> <span class="pie-value"></span> </div>
+        <div id="demo-pie-4" class="pie-title-center" data-percent="15"> <span class="pie-value"></span> </div>
+    </div>
+
+    <h1 class="ttle">Wow Js</h1>
+
+    <div class="wow hinge">
+        <div class="wowdata">
+            Its really Wow
+        </div>
+    </div>
+
+
+
+
+    <script src="js/slidebars.min.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script src="js/jquery.vide.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script src="js/picker.js"></script>
+    <script src="js/picker.date.js"></script>
+    <script src="js/picker.time.js"></script>
+    <script src="js/legacy.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery.textillate.js"></script>
+
+
+    <script>
+        //  $(document).ready(function () {
+        //    $('#block').vide('video/ocean'); // Non declarative initialization
+        //
+        //    var instance = $('#block').data('vide'); // Get the instance
+        //    var video = instance.getVideoObject(); // Get the video object
+        //    instance.destroy(); // Destroy instance
+        //
+        //    $('#block2').vide({
+        //      'mp4': 'video/ocean',
+        //      'webm': 'video/ocean',
+        //      'ogv': 'video/ocean',
+        //      'poster': 'video/ocean',
+        //    });
+        //  });
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            $(".animsition").animsition({
+                inClass: 'rotate-in',
+                outClass: 'rotate-out',
+                inDuration: 1500,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+                loading: true,
+                loadingParentElement: 'body', //animsition wrapper element
+                loadingClass: 'animsition-loading',
+                loadingInner: '', // e.g '<img src="loading.svg" />'
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: ['animation-duration', '-webkit-animation-duration'],
+                // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+                // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+                overlay: false,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function(url) {
+                    window.location.href = url;
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(".main").tiltedpage_scroll({
+            sectionContainer: "> section", // In case you don't want to use <section> tag, you can define your won CSS selector here
+            angle: 50, // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+            opacity: true, // You can toggle the opacity effect with this option. The default value is true
+            scale: true, // You can toggle the scaling effect here as well. The default value is true.
+            outAnimation: true // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+        });
+    </script>
+
+
+
+    <!--  nanogallery-->
+
+    <script>
+        $(document).ready(function() {
+            jQuery("#nanoGallery").nanoGallery({
+                kind: 'picasa',
+                userID: 'cbrisbois@gmail.com',
+
+                // uncomment line to display one specefic album:
+                //album: '5852572882905112961',
+
+                thumbnailHoverEffect: 'borderLighter'
+            });
+
+        });
+    </script>
+
+
+    <!-- datepicker-->
+    <script type="text/javascript">
+        var $input = $('.datepicker').pickadate({
+            formatSubmit: 'yyyy/mm/dd',
+            // min: [2015, 7, 14],
+            container: '#container',
+            // editable: true,
+            closeOnSelect: false,
+            closeOnClear: false,
+        })
+
+        var picker = $input.pickadate('picker')
+        // picker.set('select', '14 October, 2014')
+        // picker.open()
+
+        // $('button').on('click', function() {
+        //     picker.set('disable', true);
+        // });
+    </script>
+    <!--    Textillate-->
+    <script>
+        $('.tlt').textillate({ in: {
+                effect: 'splat'
+            },
+            out: {
+                effect: 'hinge',
+                shuffle: true
+            },
+            loop: true
+        });
+    </script>
+    <!--    countdown-->
+    <script>
+        $(function() {
+
+            var note = $('#note'),
+                ts = new Date(2012, 0, 1),
+                newYear = true;
+
+            if ((new Date()) > ts) {
+                // The new year is here! Count towards something else.
+                // Notice the *1000 at the end - time must be in milliseconds
+                ts = (new Date()).getTime() + 10 * 24 * 60 * 60 * 1000;
+                newYear = false;
+            }
+
+            $('#countdown').countdown({
+                timestamp: ts,
+                callback: function(days, hours, minutes, seconds) {
+
+                    var message = "";
+
+                    message += days + " day" + (days == 1 ? '' : 's') + ", ";
+                    message += hours + " hour" + (hours == 1 ? '' : 's') + ", ";
+                    message += minutes + " minute" + (minutes == 1 ? '' : 's') + " and ";
+                    message += seconds + " second" + (seconds == 1 ? '' : 's') + " <br />";
+
+                    if (newYear) {
+                        message += "left until the new year!";
+                    } else {
+                        message += "left to 10 days from now!";
+                    }
+
+                    note.html(message);
+                }
+            });
+
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+</html>
