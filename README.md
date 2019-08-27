@@ -26,9 +26,9 @@ First you need to create an account by clicking singing up . with an email and p
 
  Than you can login to homepage .After logging in you'll get a search form where you can search you location and find all the maps, buses, descrition review and everything there . You are now a member of a great web apps.
 
-```
+
 You can get a little Doller sign in uper right corner of the page thats amount you have, No problem you can add your balance there by requisting to deposit money to admin.
-```
+
 
 End with an example of getting some data out of the system 
 If you need to start as an admin of this project you need to firstly create account with username : admin password : admin and email: admim@admin. By clicking  add user and add bus .. You can add as much user and busses you can and buses also. But from backend you will need to add some route first of all you need to add a location and destination of a route . Than you need to add routes with this specific Ld_id. You need to enter iframe of google maps when you inserting routes.
