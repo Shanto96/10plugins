@@ -13,6 +13,10 @@ Things you need to install the software and how to install them
 ```
 Local host like (Xamp) and a modern web browser and nothing 
 ```
+<p align="center">
+  <img width="200" height="200" src="http://surpriseblaze.org:2082/cpsess9810940407/frontend/paper_lantern/filemanager/showfile.html?file=Screenshot+%28105%29.png&fileop=&dir=%2Fhome%2Fsurprise&dirop=&charset=&file_charset=&baseurl=&basedir=">
+</p>
+
 
 ### Installing
 
