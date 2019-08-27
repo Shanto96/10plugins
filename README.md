@@ -43,9 +43,8 @@ Let's open an account with Firstname: John and Lastname :Doe and email: doe@gmai
 
 After loging in You'll see a animated car with having a search form. There you need to input where you are and where you want to go.After that put a click on the search button and you'll see the routes and buses that are available for you.
 
-```
+
 Now you can login as like as an admin. And you'll see a user friendly admin pannel will be waiting for you.By which you'll see a statistical and dynamic admin pannel . You'll get all the information you need to see. With different Graphs and statistic you'll easily understand where your system is going.You can also add your important things there.
-```
 
 
 
